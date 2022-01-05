@@ -21,11 +21,12 @@ a {
 }
 
 body {
-  width: 100vw;
   min-height: 100vh;
   max-height: max-content;
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: "Dana", sans-serif;
+  background: center / cover no-repeat url("../sources/images/parallax.jpeg");
+  background-attachment: fixed;
 }
 
 .flex {

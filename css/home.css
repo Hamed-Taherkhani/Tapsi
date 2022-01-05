@@ -160,6 +160,111 @@ header {
   color: #fff;
 }
 
+#services {
+  width: 100%;
+  padding: 1rem 0;
+  overflow: auto hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#services ul {
+  min-width: 100%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#services ul li {
+  width: 100px;
+  height: 60px;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+#services ul li h4 {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+#services ul li:first-child {
+  margin: 0;
+}
+
+#services ul li:last-child {
+  margin: 0;
+}
+
+#services ul li img {
+  width: 100%;
+}
+
+.title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 1rem;
+}
+
+.middle-tiles {
+  padding: 2rem 1rem;
+  border-bottom: 1px lightgray solid;
+  min-height: 25rem;
+  background-color: #f8f8f8;
+}
+
+.middle-tiles span {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.middle-tiles .param-texts {
+  line-height: 1.5rem;
+  font-weight: 400;
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+.middle-tiles .tiles-images {
+  width: 90%;
+}
+
+.middle-tiles .tiles-links {
+  color: #fff;
+  background-color: #ff5b35;
+  padding: 0.7rem 1.3rem;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 1rem 0 0;
+}
+
+.middle-tiles .more-info {
+  display: inline-block;
+  color: #ff5b35;
+  margin: 0.5rem 0 0;
+}
+
+.unselected {
+  opacity: 0.5;
+}
+
+.select {
+  opacity: 1;
+}
+
+#transparent-block {
+  width: 100%;
+  height: 20rem;
+  background-color: transparent;
+}
+
 @font-face {
   font-family: "Dana";
   src: url("../sources/fonts/dana-regular.woff2") format("woff2");
@@ -179,13 +284,14 @@ a {
 }
 
 body {
-  width: 100vw;
   min-height: 100vh;
   max-height: -webkit-max-content;
   max-height: -moz-max-content;
   max-height: max-content;
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: "Dana", sans-serif;
+  background: center/cover no-repeat url("../sources/images/parallax.jpeg");
+  background-attachment: fixed;
 }
 
 .flex {

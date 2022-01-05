@@ -1,3 +1,4 @@
+$base-color: #ff5b35;
 $text-color: (
   "nav-links": #545454,
 );
@@ -7,7 +8,7 @@ $header-height: 3.5rem;
 $header-box-shadow-color: lightgray;
 $logo-color: (
   "color0": #000,
-  "color1": #ff5b35,
+  "color1": $base-color,
 );
 $header-bg-color: #f8f8f8;
 
