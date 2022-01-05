@@ -1,0 +1,24 @@
+$text-color: (
+  "nav-links": #545454,
+);
+
+// Header:
+$header-height: 3.5rem;
+$header-box-shadow-color: lightgray;
+$logo-color: (
+  "color0": #000,
+  "color1": #ff5b35,
+);
+$header-bg-color: #f8f8f8;
+
+@mixin flex($dir, $justify, $align) {
+  @if ($dir != null) {
+    flex-direction: $dir;
+  }
+  @if ($justify != null) {
+    justify-content: $justify;
+  }
+  @if ($align != null) {
+    align-items: $align;
+  }
+}

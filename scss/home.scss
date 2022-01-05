@@ -1,2 +1,28 @@
+@import "./config";
+@import "./header";
+
+* {
+  transition: 700ms 0s ease;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
+  width: 100vw;
+  min-height: 100vh;
+  max-height: max-content;
+}
+
+.flex {
+  display: flex;
+}
+
+.active {
+  display: block;
+}
+
+.deactive {
+  display: none;
 }

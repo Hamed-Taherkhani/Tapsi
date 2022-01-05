@@ -1,0 +1,88 @@
+@import "./config";
+
+// All header styles comes here:
+
+header {
+  @include flex(row, space-between, center);
+  width: 100%;
+  height: $header-height;
+  padding: 0 3.5rem;
+  box-sizing: border-box;
+  box-shadow: 0 1px 5px $header-box-shadow-color;
+  background-color: $header-bg-color;
+}
+
+#logo {
+  svg:hover path {
+    transition: 100ms ease;
+
+    &:nth-child(3) {
+      fill: map-get($logo-color, color0);
+    }
+    &:nth-child(1) {
+      fill: map-get($logo-color, color1);
+    }
+    &:nth-child(2) {
+      fill: map-get($logo-color, color1);
+    }
+  }
+}
+
+#menu-icon {
+  cursor: pointer;
+
+  input:checked ~ section {
+    margin: 0;
+
+    &:nth-child(2) {
+      transform: rotate(-45deg);
+      position: relative;
+      top: 2.5px;
+    }
+    &:nth-child(3) {
+      width: 0;
+    }
+    &:nth-child(4) {
+      transform: rotate(45deg);
+      position: relative;
+      bottom: 2.5px;
+    }
+  }
+
+  section {
+    width: 30px;
+    height: 3px;
+    border-radius: 1px;
+    background-color: #000;
+    margin: 7px 0;
+    transition: 200ms ease 0s;
+  }
+}
+
+#navbar {
+  nav {
+    position: absolute;
+    top: $header-height + 0.1rem;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    padding: 0 3rem;
+    box-sizing: border-box;
+
+    ul {
+      li {
+        padding: 1rem 0;
+        border-bottom: 1px solid lightgray;
+
+        a {
+          color: map-get($text-color, nav-links);
+          transition: 100ms ease;
+
+          &:hover {
+            color: map-get($logo-color, color1);
+          }
+        }
+      }
+    }
+  }
+}
