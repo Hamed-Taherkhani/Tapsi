@@ -1,0 +1,59 @@
+@import "./config";
+
+// All main styles come here:
+#introduction-content {
+  background: center / cover no-repeat url(.././sources/images/banner.webp);
+  height: 478px;
+  color: $intro-content-font-color;
+
+  &,
+  div {
+    @include flex(column, center, center);
+  }
+
+  div {
+    width: 20rem;
+    padding: 2rem 0;
+    border-radius: 20px;
+    background-image: linear-gradient(
+      51deg,
+      rgba(23, 26, 60, 0.7) 5%,
+      rgba(23, 26, 60, 0.3) 95%
+    );
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  section {
+    width: 100%;
+    margin-right: 4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  a {
+    width: 60%;
+    border: $intro-content-font-color solid 2px;
+    border-radius: 15px;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    text-align: center;
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      color: #202c3f;
+      background-color: $intro-content-font-color;
+    }
+
+    &:nth-child(4),
+    &:nth-child(5) {
+      color: $intro-content-font-color;
+    }
+  }
+}

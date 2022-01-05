@@ -1,5 +1,16 @@
 @import "./config";
 @import "./header";
+@import "./_main";
+
+@font-face {
+  font-family: "Dana";
+  src: url("../sources/fonts/dana-regular.woff2") format("woff2");
+
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  font-display: auto;
+}
 
 * {
   transition: 700ms 0s ease;
@@ -13,6 +24,8 @@ body {
   width: 100vw;
   min-height: 100vh;
   max-height: max-content;
+  overflow: hidden;
+  font-family: "Dana", sans-serif;
 }
 
 .flex {

@@ -62,12 +62,13 @@ header {
 #navbar {
   nav {
     position: absolute;
-    top: $header-height + 0.1rem;
+    top: $header-height;
     left: 0;
     background-color: #fff;
     width: 100%;
     padding: 0 3rem;
     box-sizing: border-box;
+    z-index: 10;
 
     ul {
       li {

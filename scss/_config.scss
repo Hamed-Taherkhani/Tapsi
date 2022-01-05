@@ -11,6 +11,9 @@ $logo-color: (
 );
 $header-bg-color: #f8f8f8;
 
+// Main:
+$intro-content-font-color: #fff;
+
 @mixin flex($dir, $justify, $align) {
   @if ($dir != null) {
     flex-direction: $dir;

@@ -74,13 +74,14 @@ header {
 
 #navbar nav {
   position: absolute;
-  top: 3.6rem;
+  top: 3.5rem;
   left: 0;
   background-color: #fff;
   width: 100%;
   padding: 0 3rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  z-index: 10;
 }
 
 #navbar nav ul li {
@@ -98,6 +99,76 @@ header {
   color: #ff5b35;
 }
 
+#introduction-content {
+  background: center/cover no-repeat url(.././sources/images/banner.webp);
+  height: 478px;
+  color: #fff;
+}
+
+#introduction-content,
+#introduction-content div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#introduction-content div {
+  width: 20rem;
+  padding: 2rem 0;
+  border-radius: 20px;
+  background-image: linear-gradient(51deg, rgba(23, 26, 60, 0.7) 5%, rgba(23, 26, 60, 0.3) 95%);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#introduction-content section {
+  width: 100%;
+  margin-right: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+#introduction-content h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+#introduction-content a {
+  width: 60%;
+  border: #fff solid 2px;
+  border-radius: 15px;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  text-align: center;
+}
+
+#introduction-content a:nth-child(2), #introduction-content a:nth-child(3) {
+  color: #202c3f;
+  background-color: #fff;
+}
+
+#introduction-content a:nth-child(4), #introduction-content a:nth-child(5) {
+  color: #fff;
+}
+
+@font-face {
+  font-family: "Dana";
+  src: url("../sources/fonts/dana-regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  font-display: auto;
+}
+
 * {
   -webkit-transition: 700ms 0s ease;
   transition: 700ms 0s ease;
@@ -113,6 +184,8 @@ body {
   max-height: -webkit-max-content;
   max-height: -moz-max-content;
   max-height: max-content;
+  overflow: hidden;
+  font-family: "Dana", sans-serif;
 }
 
 .flex {
