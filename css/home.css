@@ -11,7 +11,7 @@ header {
           align-items: center;
   width: 100%;
   height: 3.5rem;
-  padding: 0 3.5rem;
+  padding: 0 2rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-shadow: 0 1px 5px lightgray;
@@ -91,6 +91,10 @@ header {
   border-bottom: 1px solid lightgray;
 }
 
+#navbar nav ul li:last-child {
+  display: none;
+}
+
 #navbar nav ul li a {
   color: #545454;
   -webkit-transition: 100ms ease;
@@ -99,6 +103,63 @@ header {
 
 #navbar nav ul li a:hover {
   color: #ff5b35;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    padding: 0 5rem;
+  }
+  #menu-icon {
+    display: none;
+  }
+  #navbar {
+    width: 100%;
+  }
+  #navbar nav {
+    position: relative !important;
+    display: inline-block;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    padding: 0;
+  }
+  #navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  #navbar nav ul li {
+    border: none;
+    margin: 0 0.7rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    padding: 0 8rem;
+  }
+  #navbar nav ul li:last-child {
+    display: inline-block;
+  }
+  #navbar nav ul li:last-child a {
+    display: inherit;
+    background-color: #ff5b35;
+    color: #fff;
+    padding: 0.8rem 2.5rem;
+    border-radius: 7px;
+    font-size: 0.9rem;
+  }
 }
 
 main {
