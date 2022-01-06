@@ -9,6 +9,7 @@ main {
   background: center / cover no-repeat url(.././sources/images/banner.webp);
   height: 478px;
   color: $intro-content-font-color;
+  font-size: 0.9rem;
 
   &,
   div {
@@ -16,8 +17,8 @@ main {
   }
 
   div {
-    width: 20rem;
-    padding: 2rem 0;
+    width: 16rem;
+    padding: 1.5rem 0;
     border-radius: 20px;
     background-image: linear-gradient(
       51deg,
@@ -102,7 +103,7 @@ main {
   padding: 2rem;
   border-bottom: 1px lightgray solid;
   min-height: 25rem;
-  background-color: $header-bg-color;
+  background-color: #fff;
 
   span {
     display: inline-block;
@@ -111,9 +112,9 @@ main {
   }
 
   .param-texts {
-    line-height: 1.5rem;
+    line-height: $line-height;
     font-weight: 400;
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-align: justify;
   }
 
@@ -130,8 +131,8 @@ main {
   .tiles-links {
     color: #fff;
     background-color: $base-color;
-    padding: 0.7rem 1.3rem;
-    border-radius: 20px;
+    padding: 1.2rem 2rem;
+    border-radius: 15px;
     display: inline-block;
     margin: 1rem 0 0;
   }
@@ -189,9 +190,14 @@ main {
   }
 }
 
+#features-for-taxi-driver {
+  line-height: $line-height;
+}
+
 .feature-list {
   h4 {
     font-size: 1rem;
+    font-weight: 600;
   }
 
   ul {
@@ -204,6 +210,7 @@ main {
 
 .links {
   @include flex(column, center, center);
+  width: fit-content;
 
   a {
     background-color: $button-color;
@@ -218,5 +225,97 @@ main {
     &:first-child {
       margin-bottom: 0.7rem;
     }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .middle-tiles {
+    padding: 2rem 5rem;
+  }
+
+  .tiles {
+    display: flex;
+    @include flex(row, null, center);
+
+    img {
+      width: 50% !important;
+    }
+  }
+
+  #services-text {
+    width: 50%;
+  }
+
+  #services-for-business {
+    & > img {
+      order: 1;
+      margin-right: 2rem;
+    }
+
+    & > div {
+      order: 0;
+    }
+  }
+
+  #transparent-block {
+    height: 10rem;
+    flex-wrap: wrap;
+
+    ul {
+      display: flex;
+
+      li {
+        border-left: 2px solid #fff;
+        padding: 1rem;
+        height: 2.5rem;
+        position: relative;
+
+        &:hover {
+          bottom: 2rem;
+        }
+
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+  }
+
+  #features-for-taxi-driver {
+    align-items: flex-start;
+
+    & > div {
+      width: 50%;
+    }
+
+    img {
+      order: 1;
+      margin-right: 2rem;
+    }
+
+    .links {
+      position: relative;
+      margin-top: 2rem;
+
+      div {
+        flex-direction: row;
+        align-items: baseline;
+        position: absolute;
+        right: 0;
+        top: -4rem;
+
+        a {
+          &:first-child {
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .middle-tiles {
+    padding: 2rem 8rem;
   }
 }

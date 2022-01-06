@@ -170,6 +170,7 @@ main {
   background: center/cover no-repeat url(.././sources/images/banner.webp);
   height: 478px;
   color: #fff;
+  font-size: 0.9rem;
 }
 
 #introduction-content,
@@ -187,8 +188,8 @@ main {
 }
 
 #introduction-content div {
-  width: 20rem;
-  padding: 2rem 0;
+  width: 16rem;
+  padding: 1.5rem 0;
   border-radius: 20px;
   background-image: linear-gradient(51deg, rgba(23, 26, 60, 0.7) 5%, rgba(23, 26, 60, 0.3) 95%);
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -277,7 +278,7 @@ main {
   padding: 2rem;
   border-bottom: 1px lightgray solid;
   min-height: 25rem;
-  background-color: #f8f8f8;
+  background-color: #fff;
 }
 
 .middle-tiles span {
@@ -287,9 +288,9 @@ main {
 }
 
 .middle-tiles .param-texts {
-  line-height: 1.5rem;
+  line-height: 2rem;
   font-weight: 400;
-  font-size: 0.9rem;
+  font-size: 1rem;
   text-align: justify;
 }
 
@@ -306,8 +307,8 @@ main {
 .middle-tiles .tiles-links {
   color: #fff;
   background-color: #ff5b35;
-  padding: 0.7rem 1.3rem;
-  border-radius: 20px;
+  padding: 1.2rem 2rem;
+  border-radius: 15px;
   display: inline-block;
   margin: 1rem 0 0;
 }
@@ -372,8 +373,13 @@ main {
   padding: 0 2rem;
 }
 
+#features-for-taxi-driver {
+  line-height: 2rem;
+}
+
 .feature-list h4 {
   font-size: 1rem;
+  font-weight: 600;
 }
 
 .feature-list ul li {
@@ -392,6 +398,9 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .links a {
@@ -407,6 +416,102 @@ main {
 
 .links a:first-child {
   margin-bottom: 0.7rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .middle-tiles {
+    padding: 2rem 5rem;
+  }
+  .tiles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .tiles img {
+    width: 50% !important;
+  }
+  #services-text {
+    width: 50%;
+  }
+  #services-for-business > img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-right: 2rem;
+  }
+  #services-for-business > div {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  #transparent-block {
+    height: 10rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #transparent-block ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #transparent-block ul li {
+    border-left: 2px solid #fff;
+    padding: 1rem;
+    height: 2.5rem;
+    position: relative;
+  }
+  #transparent-block ul li:hover {
+    bottom: 2rem;
+  }
+  #transparent-block ul li:last-child {
+    border: none;
+  }
+  #features-for-taxi-driver {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #features-for-taxi-driver > div {
+    width: 50%;
+  }
+  #features-for-taxi-driver img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-right: 2rem;
+  }
+  #features-for-taxi-driver .links {
+    position: relative;
+    margin-top: 2rem;
+  }
+  #features-for-taxi-driver .links div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    position: absolute;
+    right: 0;
+    top: -4rem;
+  }
+  #features-for-taxi-driver .links div a:first-child {
+    margin-left: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .middle-tiles {
+    padding: 2rem 8rem;
+  }
 }
 
 footer {
@@ -504,8 +609,8 @@ footer div[subfooter] ul li:first-child {
 }
 
 * {
-  -webkit-transition: 500ms 0s ease;
-  transition: 500ms 0s ease;
+  -webkit-transition: 500ms 200ms ease;
+  transition: 500ms 200ms ease;
 }
 
 a {
