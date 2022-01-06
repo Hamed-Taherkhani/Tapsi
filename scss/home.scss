@@ -13,8 +13,8 @@
   font-display: auto;
 }
 
-* {
-  transition: 500ms 200ms ease;
+*:not(.links, .links div) {
+  transition: 500ms 300ms ease;
 }
 
 a {
@@ -40,6 +40,28 @@ body {
 
 .deactive {
   display: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(85, 85, 85, 0.199);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(85, 85, 85, 0.61);
 }
 
 @media print {

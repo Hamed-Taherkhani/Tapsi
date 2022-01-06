@@ -45,8 +45,8 @@ main {
   a {
     width: 60%;
     border: $intro-content-font-color solid 2px;
-    border-radius: 15px;
-    padding: 1rem 2rem;
+    border-radius: $btn-radius;
+    padding: $btn-padding;
     margin: 0.5rem;
     text-align: center;
 
@@ -65,7 +65,7 @@ main {
 
 #services {
   width: 100%;
-  padding: 1rem 0;
+  padding: 2rem 0;
   overflow: auto hidden;
   box-sizing: border-box;
 
@@ -130,11 +130,13 @@ main {
 
   .tiles-links {
     color: #fff;
-    background-color: $base-color;
-    padding: 1.2rem 2rem;
-    border-radius: 15px;
+    background-color: $btn-color1;
+    padding: $btn-padding;
+    border-radius: $btn-radius;
+    width: $btn-width;
     display: inline-block;
     margin: 1rem 0 0;
+    text-align: center;
   }
 
   .more-info {
@@ -192,6 +194,10 @@ main {
 
 #features-for-taxi-driver {
   line-height: $line-height;
+
+  .links div {
+    flex-direction: column;
+  }
 }
 
 .feature-list {
@@ -213,13 +219,14 @@ main {
   width: fit-content;
 
   a {
-    background-color: $button-color;
+    background-color: $btn-color0;
+    padding: $btn-padding;
+    width: $btn-width;
+    border-radius: $btn-radius;
     color: #fff;
     display: inline-block;
-    border-radius: 15px;
-    width: 13rem;
+    width: $btn-width;
     text-align: center;
-    padding: 1.3rem 1.5rem;
     font-size: 0.9rem;
 
     &:first-child {
@@ -295,7 +302,7 @@ main {
 
     .links {
       position: relative;
-      margin-top: 2rem;
+      margin-top: 4rem;
 
       div {
         flex-direction: row;

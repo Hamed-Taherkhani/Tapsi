@@ -4,6 +4,12 @@ $text-color: (
 );
 $line-height: 2rem;
 
+$btn-padding: 1rem 2rem;
+$btn-color0: #0065dc;
+$btn-color1: $base-color;
+$btn-width: 11rem;
+$btn-radius: 15px;
+
 // Header:
 $header-height: 3.5rem;
 $header-box-shadow-color: lightgray;
@@ -15,7 +21,6 @@ $header-bg-color: #f8f8f8;
 
 // Main:
 $intro-content-font-color: #fff;
-$button-color: #0065dc;
 
 // Footer:
 $footer-bg-color: #000;

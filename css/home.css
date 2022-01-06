@@ -230,7 +230,7 @@ main {
 
 #services {
   width: 100%;
-  padding: 1rem 0;
+  padding: 2rem 0;
   overflow: auto hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -307,10 +307,12 @@ main {
 .middle-tiles .tiles-links {
   color: #fff;
   background-color: #ff5b35;
-  padding: 1.2rem 2rem;
+  padding: 1rem 2rem;
   border-radius: 15px;
+  width: 11rem;
   display: inline-block;
   margin: 1rem 0 0;
+  text-align: center;
 }
 
 .middle-tiles .more-info {
@@ -377,6 +379,13 @@ main {
   line-height: 2rem;
 }
 
+#features-for-taxi-driver .links div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .feature-list h4 {
   font-size: 1rem;
   font-weight: 600;
@@ -405,12 +414,13 @@ main {
 
 .links a {
   background-color: #0065dc;
+  padding: 1rem 2rem;
+  width: 11rem;
+  border-radius: 15px;
   color: #fff;
   display: inline-block;
-  border-radius: 15px;
-  width: 13rem;
+  width: 11rem;
   text-align: center;
-  padding: 1.3rem 1.5rem;
   font-size: 0.9rem;
 }
 
@@ -489,7 +499,7 @@ main {
   }
   #features-for-taxi-driver .links {
     position: relative;
-    margin-top: 2rem;
+    margin-top: 4rem;
   }
   #features-for-taxi-driver .links div {
     -webkit-box-orient: horizontal;
@@ -608,9 +618,9 @@ footer div[subfooter] ul li:first-child {
   font-display: auto;
 }
 
-* {
-  -webkit-transition: 500ms 200ms ease;
-  transition: 500ms 200ms ease;
+*:not(.links, .links div) {
+  -webkit-transition: 500ms 300ms ease;
+  transition: 500ms 300ms ease;
 }
 
 a {
@@ -640,6 +650,28 @@ body {
 
 .deactive {
   display: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(85, 85, 85, 0.199);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(85, 85, 85, 0.61);
 }
 
 @media print {
