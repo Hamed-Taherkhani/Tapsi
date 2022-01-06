@@ -99,7 +99,7 @@ main {
 }
 
 .middle-tiles {
-  padding: 2rem 1rem;
+  padding: 2rem;
   border-bottom: 1px lightgray solid;
   min-height: 25rem;
   background-color: $header-bg-color;
@@ -145,7 +145,7 @@ main {
   .title {
     font-size: 1.4rem;
     font-weight: bold;
-    margin: 1rem;
+    margin: 1rem 0;
   }
 }
 

@@ -213,7 +213,7 @@ main {
 }
 
 .middle-tiles {
-  padding: 2rem 1rem;
+  padding: 2rem;
   border-bottom: 1px lightgray solid;
   min-height: 25rem;
   background-color: #f8f8f8;
@@ -260,7 +260,7 @@ main {
 .middle-tiles .title {
   font-size: 1.4rem;
   font-weight: bold;
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
 .unselected {
@@ -360,7 +360,7 @@ footer h3 {
 }
 
 footer img[tapsi-light-logo] {
-  width: 25%;
+  width: 18vw;
 }
 
 footer .title {
@@ -369,7 +369,14 @@ footer .title {
   font-weight: 600;
 }
 
-footer ul li {
+footer > ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer > ul li ul li {
   margin: 1.1rem 0;
 }
 
@@ -394,6 +401,36 @@ footer div[subfooter] ul li {
 
 footer div[subfooter] ul li:first-child {
   margin-right: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  footer > ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  footer h3 {
+    font-size: 1.1rem;
+  }
+  footer .title {
+    font-size: 1.6rem;
+  }
+  footer a {
+    font-size: 1.05rem;
+  }
+  footer > ul li ul li {
+    margin: 2rem 0;
+  }
+  footer div[subfooter] p {
+    font-size: 1.2rem;
+  }
 }
 
 @font-face {
@@ -437,5 +474,15 @@ body {
 
 .deactive {
   display: none;
+}
+
+@media print {
+  header,
+  #introduction-content,
+  footer,
+  img,
+  #services {
+    display: none;
+  }
 }
 /*# sourceMappingURL=home.css.map */

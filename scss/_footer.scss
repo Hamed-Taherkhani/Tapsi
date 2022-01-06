@@ -14,7 +14,7 @@ footer {
 
   img {
     &[tapsi-light-logo] {
-      width: 25%;
+      width: 18vw;
     }
   }
 
@@ -24,8 +24,12 @@ footer {
     font-weight: 600;
   }
 
-  ul li {
-    margin: 1.1rem 0;
+  & > ul {
+    flex-direction: column;
+
+    li ul li {
+      margin: 1.1rem 0;
+    }
   }
 
   a {
@@ -49,6 +53,42 @@ footer {
         &:first-child {
           margin-right: 0;
         }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    & > ul {
+      @include flex(row, space-evenly, null);
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  footer {
+    h3 {
+      font-size: 1.1rem;
+    }
+
+    .title {
+      font-size: 1.6rem;
+    }
+
+    a {
+      font-size: 1.05rem;
+    }
+
+    & > ul {
+      li ul li {
+        margin: 2rem 0;
+      }
+    }
+
+    div[subfooter] {
+      p {
+        font-size: 1.2rem;
       }
     }
   }
