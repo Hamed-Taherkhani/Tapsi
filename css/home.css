@@ -17,6 +17,8 @@ header {
   -webkit-box-shadow: 0 1px 5px lightgray;
           box-shadow: 0 1px 5px lightgray;
   background-color: #f8f8f8;
+  position: fixed;
+  z-index: 10;
 }
 
 #logo svg:hover path {
@@ -97,6 +99,10 @@ header {
 
 #navbar nav ul li a:hover {
   color: #ff5b35;
+}
+
+main {
+  padding-top: 3.5rem;
 }
 
 #introduction-content {

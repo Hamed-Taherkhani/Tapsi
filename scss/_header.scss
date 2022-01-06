@@ -1,6 +1,5 @@
-@import "./config";
-
 // All header styles comes here:
+@import "./config";
 
 header {
   @include flex(row, space-between, center);
@@ -10,6 +9,8 @@ header {
   box-sizing: border-box;
   box-shadow: 0 1px 5px $header-box-shadow-color;
   background-color: $header-bg-color;
+  position: fixed;
+  z-index: 10;
 }
 
 #logo {

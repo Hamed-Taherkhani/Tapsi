@@ -1,6 +1,9 @@
 @import "./config";
 
 // All main styles come here:
+main {
+  padding-top: $header-height;
+}
 
 #introduction-content {
   background: center / cover no-repeat url(.././sources/images/banner.webp);
