@@ -206,12 +206,6 @@ header {
   width: 100%;
 }
 
-.title {
-  font-size: 1.4rem;
-  font-weight: bold;
-  margin: 1rem;
-}
-
 .middle-tiles {
   padding: 2rem 1rem;
   border-bottom: 1px lightgray solid;
@@ -236,6 +230,12 @@ header {
   width: 90%;
 }
 
+.middle-tiles .tiles-images[driverimg] {
+  border-radius: 25px;
+  width: 100%;
+  margin: 1rem 0;
+}
+
 .middle-tiles .tiles-links {
   color: #fff;
   background-color: #ff5b35;
@@ -251,6 +251,12 @@ header {
   margin: 0.5rem 0 0;
 }
 
+.middle-tiles .title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 1rem;
+}
+
 .unselected {
   opacity: 0.5;
 }
@@ -263,6 +269,125 @@ header {
   width: 100%;
   height: 20rem;
   background-color: transparent;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#transparent-block ul li {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#transparent-block ul li:hover .param {
+  visibility: visible;
+}
+
+#transparent-block .title {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+#transparent-block .param {
+  color: #fff;
+  font-size: 0.8rem;
+  visibility: hidden;
+  -webkit-transition: none;
+  transition: none;
+  padding: 0 2rem;
+}
+
+.feature-list h4 {
+  font-size: 1rem;
+}
+
+.feature-list ul li {
+  margin: 0.7rem 0;
+  font-size: 0.9rem;
+}
+
+.links {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.links a {
+  background-color: #0065dc;
+  color: #fff;
+  display: inline-block;
+  border-radius: 15px;
+  width: 13rem;
+  text-align: center;
+  padding: 1.3rem 1.5rem;
+  font-size: 0.9rem;
+}
+
+.links a:first-child {
+  margin-bottom: 0.7rem;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem 1rem 0;
+}
+
+footer h3 {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+footer img[tapsi-light-logo] {
+  width: 25%;
+}
+
+footer .title {
+  font-size: 1.3rem;
+  margin: 1.5rem 0 0;
+  font-weight: 600;
+}
+
+footer ul li {
+  margin: 1.1rem 0;
+}
+
+footer a {
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+footer div[subfooter] {
+  margin-top: 2rem;
+  padding: 1rem 0 0;
+  border-top: 1px solid rgba(211, 211, 211, 0.144);
+}
+
+footer div[subfooter] p {
+  font-size: 0.8rem;
+}
+
+footer div[subfooter] ul li {
+  margin: 1rem 1rem 0.5rem;
+}
+
+footer div[subfooter] ul li:first-child {
+  margin-right: 0;
 }
 
 @font-face {
@@ -275,8 +400,8 @@ header {
 }
 
 * {
-  -webkit-transition: 700ms 0s ease;
-  transition: 700ms 0s ease;
+  -webkit-transition: 500ms 0s ease;
+  transition: 500ms 0s ease;
 }
 
 a {

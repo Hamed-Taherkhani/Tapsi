@@ -1,0 +1,55 @@
+// All footer styles comes here:
+
+@import "./config";
+
+footer {
+  background-color: $footer-bg-color;
+  color: $footer-font-color;
+  padding: 2rem 1rem 0;
+
+  h3 {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+
+  img {
+    &[tapsi-light-logo] {
+      width: 25%;
+    }
+  }
+
+  .title {
+    font-size: 1.3rem;
+    margin: 1.5rem 0 0;
+    font-weight: 600;
+  }
+
+  ul li {
+    margin: 1.1rem 0;
+  }
+
+  a {
+    color: $footer-font-color;
+    font-size: 0.75rem;
+  }
+
+  div[subfooter] {
+    margin-top: 2rem;
+    padding: 1rem 0 0;
+    border-top: 1px solid rgba(211, 211, 211, 0.144);
+
+    p {
+      font-size: 0.8rem;
+    }
+
+    ul {
+      li {
+        margin: 1rem 1rem 0.5rem;
+
+        &:first-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

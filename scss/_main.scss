@@ -95,12 +95,6 @@
   }
 }
 
-.title {
-  font-size: 1.4rem;
-  font-weight: bold;
-  margin: 1rem;
-}
-
 .middle-tiles {
   padding: 2rem 1rem;
   border-bottom: 1px lightgray solid;
@@ -122,6 +116,12 @@
 
   .tiles-images {
     width: 90%;
+
+    &[driverimg] {
+      border-radius: 25px;
+      width: 100%;
+      margin: 1rem 0;
+    }
   }
 
   .tiles-links {
@@ -138,6 +138,12 @@
     color: $base-color;
     margin: 0.5rem 0 0;
   }
+
+  .title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 1rem;
+  }
 }
 
 .unselected {
@@ -152,4 +158,62 @@
   width: 100%;
   height: 20rem;
   background-color: transparent;
+  @include flex(column, center, center);
+
+  ul {
+    li {
+      text-align: center;
+      margin: 1rem 0;
+
+      &:hover .param {
+        visibility: visible;
+      }
+    }
+  }
+
+  .title {
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  .param {
+    color: #fff;
+    font-size: 0.8rem;
+    visibility: hidden;
+    transition: none;
+    padding: 0 2rem;
+  }
+}
+
+.feature-list {
+  h4 {
+    font-size: 1rem;
+  }
+
+  ul {
+    li {
+      margin: 0.7rem 0;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.links {
+  @include flex(column, center, center);
+
+  a {
+    background-color: $button-color;
+    color: #fff;
+    display: inline-block;
+    border-radius: 15px;
+    width: 13rem;
+    text-align: center;
+    padding: 1.3rem 1.5rem;
+    font-size: 0.9rem;
+
+    &:first-child {
+      margin-bottom: 0.7rem;
+    }
+  }
 }

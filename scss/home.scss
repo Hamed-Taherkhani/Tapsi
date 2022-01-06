@@ -1,6 +1,7 @@
 @import "./config";
 @import "./header";
 @import "./_main";
+@import "./_footer";
 
 @font-face {
   font-family: "Dana";
@@ -13,7 +14,7 @@
 }
 
 * {
-  transition: 700ms 0s ease;
+  transition: 500ms 0s ease;
 }
 
 a {
