@@ -29,6 +29,14 @@ footer {
 
     li ul li {
       margin: 1.1rem 0;
+
+      a {
+        transition: 100ms ease !important;
+
+        &:hover {
+          color: $base-color;
+        }
+      }
     }
   }
 

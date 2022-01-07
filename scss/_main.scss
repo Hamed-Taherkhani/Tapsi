@@ -63,6 +63,10 @@ main {
   }
 }
 
+#phone-mockup {
+  display: none;
+}
+
 #services {
   width: 100%;
   padding: 2rem 0;
@@ -236,6 +240,24 @@ main {
 }
 
 @media only screen and (min-width: 768px) {
+  #introduction-content {
+    & > div {
+      width: 500px;
+      align-self: flex-start;
+      margin-right: 5rem;
+      margin-top: -9rem;
+
+      section {
+        padding: 6rem 1rem 1rem 0;
+
+        h1 {
+          font-size: 3.5rem;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
   .middle-tiles {
     padding: 2rem 5rem;
   }
@@ -322,6 +344,29 @@ main {
 }
 
 @media only screen and (min-width: 1024px) {
+  #introduction-content {
+    & > div {
+      align-self: flex-start;
+      margin-right: 8rem;
+
+      section {
+        padding-right: 6rem;
+      }
+
+      a {
+        width: 50%;
+      }
+    }
+  }
+
+  #phone-mockup {
+    display: inline-block;
+    position: absolute;
+    top: 130px;
+    left: 12%;
+    width: 400px;
+  }
+
   .middle-tiles {
     padding: 2rem 8rem;
   }

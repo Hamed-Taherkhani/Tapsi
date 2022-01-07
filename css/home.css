@@ -228,6 +228,10 @@ main {
   color: #fff;
 }
 
+#phone-mockup {
+  display: none;
+}
+
 #services {
   width: 100%;
   padding: 2rem 0;
@@ -429,6 +433,20 @@ main {
 }
 
 @media only screen and (min-width: 768px) {
+  #introduction-content > div {
+    width: 500px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-right: 5rem;
+    margin-top: -9rem;
+  }
+  #introduction-content > div section {
+    padding: 6rem 1rem 1rem 0;
+  }
+  #introduction-content > div section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
   .middle-tiles {
     padding: 2rem 5rem;
   }
@@ -519,6 +537,24 @@ main {
 }
 
 @media only screen and (min-width: 1024px) {
+  #introduction-content > div {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-right: 8rem;
+  }
+  #introduction-content > div section {
+    padding-right: 6rem;
+  }
+  #introduction-content > div a {
+    width: 50%;
+  }
+  #phone-mockup {
+    display: inline-block;
+    position: absolute;
+    top: 130px;
+    left: 12%;
+    width: 400px;
+  }
   .middle-tiles {
     padding: 2rem 8rem;
   }
@@ -554,6 +590,15 @@ footer > ul {
 
 footer > ul li ul li {
   margin: 1.1rem 0;
+}
+
+footer > ul li ul li a {
+  -webkit-transition: 100ms ease !important;
+  transition: 100ms ease !important;
+}
+
+footer > ul li ul li a:hover {
+  color: #ff5b35;
 }
 
 footer a {
@@ -618,7 +663,7 @@ footer div[subfooter] ul li:first-child {
   font-display: auto;
 }
 
-*:not(.links, .links div) {
+*:not(.links, .links div, #transparent-block) {
   -webkit-transition: 500ms 300ms ease;
   transition: 500ms 300ms ease;
 }

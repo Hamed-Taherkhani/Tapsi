@@ -13,7 +13,7 @@
   font-display: auto;
 }
 
-*:not(.links, .links div) {
+*:not(.links, .links div, #transparent-block) {
   transition: 500ms 300ms ease;
 }
 
