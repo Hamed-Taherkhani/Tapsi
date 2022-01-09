@@ -663,7 +663,7 @@ footer div[subfooter] ul li:first-child {
   font-display: auto;
 }
 
-*:not(.links, .links div, #transparent-block) {
+*:not(.links, .links div, #transparent-block, img) {
   -webkit-transition: 500ms 300ms ease;
   transition: 500ms 300ms ease;
 }
